@@ -51,29 +51,43 @@ table {
  * {
     box-sizing: border-box;
     margin: 0 auto;
+    
+  }
+  body{
     font-family: "Noto Sans";
+    line-height: 1.5;
   }
 
-.header{
-    display: flex;
-    padding: 80px 0px;
-    gap: 24px;
+  .container{
+    border-bottom: 1px solid #F1F1F1 ;
+  }
 
+.header-content{
+    max-width: 1296px;
+    margin: 0 auto;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
 }
 
-.header img{
-    margin: 20px 318px 28px 312px;
+.header-content img{
+    position: absolute;
+    left: 0;
 }
 
 .menu{
     width: 480px;
     gap: 40px;
+    margin: 32px 0; 
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.menu li::before,.menu li::after{
+ /*.menu li::before,.menu li::after{
     position: absolute;
     -webkit-box-reflect: below 16px;
   }
@@ -97,18 +111,21 @@ table {
     height: 10px;
     border-top:1px solid #000;
     border-right: 1px solid #000;
-  }
+  } */
 
 
-
+.menu li{
+    padding: 4px 8px;
+    
+}
 
 
 
 .menu .btn{
     font-size: 16px;
-    line-height: 24px;
     color: #000000;
     text-decoration: none;
+    font-weight: 400;
     
 }
 
@@ -128,7 +145,7 @@ table {
    /* 內容*/
 
   .list {
-    
+    max-width: 1296px;
     gap: 24px;
     display: flex;
     justify-content: space-between;
