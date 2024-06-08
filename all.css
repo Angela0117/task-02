@@ -47,30 +47,93 @@ table {
 	border-spacing: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-* {
+ /* 表頭*/
+ * {
     box-sizing: border-box;
+    margin: 0 auto;
     font-family: "Noto Sans";
   }
-  
+
+.header{
+    display: flex;
+    padding: 80px 0px;
+    gap: 24px;
+
+}
+
+.header img{
+    margin: 20px 318px 28px 312px;
+}
+
+.menu{
+    width: 480px;
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu li::before,.menu li::after{
+    position: absolute;
+    -webkit-box-reflect: below 16px;
+  }
+  .menu li::before{
+    top: 0;
+    left: 0;
+    content:"";
+    color:red;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top:1px solid #000;
+    border-left: 1px solid #000;
+  }
+  .menu li::after{
+    top: 0;
+    right:0;
+    content:"";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top:1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+
+
+
+
+
+.menu .btn{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* 內容*/
+
   .list {
-    width: 1296px;
-    margin: 20px;
+    
+    gap: 24px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
   
   img {
@@ -118,9 +181,30 @@ table {
   }
   
   .pages{
-    width: 152px;
-    border: 2px solid red;
+    max-width: 152px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 72px;
+    margin-bottom: 120px;
   }
+
+  .pages .btn{
+    display: block;
+    width: 40px;
+    border-radius: 4px;
+    padding: 2px 13px;
+    gap: 10px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    color: #3B3B3B;
+  }
+
+  .pages .btn:hover{
+    color: #FFFFFF;
+    background: #1E1E1E;
+  }
+
+   /* 表尾*/
