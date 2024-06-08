@@ -208,13 +208,25 @@ table {
 
    /* 內容*/
 
-  .list {
+.main{
     max-width: 1296px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+
+
+  .list {
+    
     gap: 24px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
+    
+    row-gap: 80px;
+    margin-bottom: 72px;
+    
+    
   }
   
   img {
@@ -225,7 +237,6 @@ table {
   
   .card {
     width: 636px;
-    margin-bottom: 80px;
   }
   
   .card-content {
@@ -266,8 +277,7 @@ table {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 72px;
-    margin-bottom: 120px;
+    gap: 16px;
   }
 
   .pages .btn{
