@@ -85,14 +85,21 @@ table {
 .menu{
     width: 480px;
     gap: 40px;
-    margin: 32px 0; 
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 @media (max-width: 768px) {
     .menu{
-        display: none;
+        /*display: none;*/
+        flex-direction: column;
+        position: absolute;
+        top: 96px;
+        width: 100%;
+        text-align: center;
+    }
+    .header-content{
+        justify-content: end;
     }
 
 }
@@ -217,12 +224,10 @@ table {
 
 
   .list {
-    
     gap: 24px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
     row-gap: 80px;
     margin-bottom: 72px;
     
@@ -299,3 +304,11 @@ table {
   }
 
    /* 表尾*/
+
+   .footer-bg-sm{
+    display: none;
+
+
+
+
+   }
