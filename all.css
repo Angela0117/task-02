@@ -243,7 +243,7 @@ table {
     
   }
   
-  img {
+  .card img {
     border-radius: 8px;
     display: block;
     border: 1px solid #f1f1f1;
@@ -326,24 +326,23 @@ table {
     justify-content: space-between;
     border: 1px solid red
    }
-
-  .footer-connecion{
+ .footer-connecion{
     width: 686px;
     margin: 119px 0px;
     border: 1px solid rgb(4, 61, 49)
-}
-
-   .footer-connecion p{
+   } 
+.footer-connecion p{
     margin: 24px 0px;
     font-size: 20px;
     font-weight: 400;
 
    }
-
    .footer-link{
-    width: 306px;
+    /*width: 306px;*/
     gap: 24px;
     margin: 80px 0px;
     border: 1px solid rgb(29, 4, 61)
 
 }
+
+
