@@ -232,7 +232,7 @@ table {
 
 
 
-  .list {
+.list {
     gap: 24px;
     display: flex;
     justify-content: space-between;
@@ -243,22 +243,22 @@ table {
     
   }
   
-  .card img {
+.card img {
     border-radius: 8px;
     display: block;
     border: 1px solid #f1f1f1;
   }
   
-  .card {
+.card {
     width: 636px;
   }
   
-  .card-content {
+.card-content {
     margin-top: 16px;
     margin-left: 16px;
   }
   
-  .card-title {
+.card-title {
     font-size: 28px;
     font-weight: 700;
     line-height: 33.6px;
@@ -266,17 +266,17 @@ table {
     color: #3b3b3b;
   }
   
-  .card-text {
+.card-text {
     line-height: 24px;
     margin-bottom: 24px;
     color: #919191;
   }
   
-  .tags {
+.tags {
     display: flex;
   }
   
-  .tags li {
+.tags li {
     border-radius: 16px;
     background: #f1f1f1;
     padding: 4px 12px;
@@ -286,7 +286,7 @@ table {
     font-weight: bold;
   }
   
-  .pages{
+.pages{
     max-width: 152px;
     margin: 0 auto;
     display: flex;
@@ -294,7 +294,7 @@ table {
     gap: 16px;
   }
 
-  .pages .btn{
+.pages .btn{
     display: block;
     width: 40px;
     border-radius: 4px;
@@ -307,61 +307,80 @@ table {
     color: #3B3B3B;
   }
 
-  .pages .btn:hover{
+.pages .btn:hover{
     color: #FFFFFF;
     background: #1E1E1E;
   }
 
    /* 表尾*/
 
-   .footer-bg{
+.footer-bg{
      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
    }
 
-   .footer-content{
+.footer-content{
     max-width: 1296px;
     margin: 0 auto;
+    /*padding: 80px 0px;*/
     height: 424px;
     display: flex;
     justify-content: space-between;
     border: 1px solid red
    }
- .footer-connecion{
+ .footer-connetion{
     width: 686px;
     margin: 119px 0px;
     border: 1px solid rgb(4, 61, 49)
    } 
-.footer-connecion p{
+.footer-connetion p{
     margin: 24px 0px;
     font-size: 20px;
     font-weight: 400;
-
+    color: #3B3B3B;
+    ;
    }
-   .footer-link{
+
+.footer-connetion img{
+    width: 120px;
+    height: 54px;
+   }
+
+.footer-connetion a{
+    color: #919191;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-decoration: none;
+   }
+
+
+.footer-link{
     width: 306px;
     gap: 24px;
     margin: 80px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid rgb(29, 4, 61)
+   border: 1px solid rgb(29, 4, 61)
 
 }
 
 .footer-link a{
-    display: block;
+    
     display: flex;
     align-items: center;
     width: 100%;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-    border: 3px solid rgb(29, 4, 61)
+    border: 1px solid #cf1b1b
     padding: 8px 24px 8px 24px;
     gap: 8px;
-    border-radius: 8px 0px 0px 0px;
+    border-radius: 8px;
     background: #C1C1C1;
+    color:#3B3B3B
 
 }
+
 
 
