@@ -322,7 +322,28 @@ table {
     max-width: 1296px;
     margin: 0 auto;
     height: 424px;
+    display: flex;
+    justify-content: space-between;
     border: 1px solid red
-    
    }
 
+  .footer-connecion{
+    width: 686px;
+    margin: 119px 0px;
+    border: 1px solid rgb(4, 61, 49)
+}
+
+   .footer-connecion p{
+    margin: 24px 0px;
+    font-size: 20px;
+    font-weight: 400;
+
+   }
+
+   .footer-link{
+    width: 306px;
+    gap: 24px;
+    margin: 80px 0px;
+    border: 1px solid rgb(29, 4, 61)
+
+}
