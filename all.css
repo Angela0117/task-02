@@ -53,12 +53,12 @@ table {
     margin: 0 auto;
     
   }
-  body{
+body{
     font-family: "Noto Sans TC", sans-serif;
     line-height: 1.5;
   }
 
-  .container{
+.container{
     border-bottom: 1px solid #F1F1F1 ;
   }
 
@@ -157,7 +157,6 @@ table {
     .hamburger-menu{
         display: block;
     }
-
 }
 
 /* banner*/
@@ -279,7 +278,7 @@ table {
    /* 內容*/
 
 .main{
-   max-width: 1296px;
+    max-width: 1296px;
     margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 120px;
@@ -298,7 +297,7 @@ table {
     max-width: 636px;
   }
 
-  .card img {
+.card img {
     width: 100%;
     border-radius: 8px;
     display: block;
@@ -365,56 +364,56 @@ table {
 
 /* 內容 992px RWD*/
 @media (max-width: 992px) {
-.main{
-    margin: 80px 12px 80px 12px;
+   .main{
+       margin: 80px 12px 80px 12px;
 }
-.list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 48px;
-    margin-bottom: 48px;
+   .list {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       row-gap: 48px;
+       margin-bottom: 48px;
   }
-  .card img {
-    max-width: 100%;
-    border-radius: 4px;
-    display: block;
-    border: 0.55px solid #f1f1f1;
+   .card img {
+       max-width: 100%;
+       border-radius: 4px;
+       display: block;
+       border: 0.55px solid #f1f1f1;
   }
 }
 
 /* 內容 768px RWD*/
   @media (max-width: 768px) {
     .main{
-         margin: 80px 12px 80px 12px;
+        margin: 80px 12px 80px 12px;
      }
      
     .list {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         align-items: center;
-         row-gap: 48px;
-         margin-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 48px;
+        margin-bottom: 48px;
        }
      
     .card img {
-         width: 100%;
-         border-radius: 4px;
-         display: block;
-         border: 0.55px solid #f1f1f1;
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+        border: 0.55px solid #f1f1f1;
        }
      
     .card-content {
-         margin-top: 16px;
-         padding-left: 16px;
+        margin-top: 16px;
+        padding-left: 16px;
        }
        
     .card-title {
-         font-size: 20px;
-         line-height: 1.2;
+        font-size: 20px;
+        line-height: 1.2;
        }
        
     .card-text {
@@ -424,11 +423,11 @@ table {
        }
        
     .pages{
-         max-width: 152px;
-         margin: 0 auto;
-         display: flex;
-         justify-content: space-between;
-         gap: 16px;
+        max-width: 152px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
        }
   }
 
