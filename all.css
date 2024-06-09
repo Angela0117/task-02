@@ -343,7 +343,7 @@ table {
 /* 內容 RWD*/
   @media (max-width: 768px) {
     .main{
-         margin: 80px 12px 0px 12px;
+         margin: 80px 12px 80px 12px;
      }
      
      .list {
@@ -385,60 +385,11 @@ table {
          justify-content: space-between;
          gap: 16px;
        }
-     
-     .pages .btn{
-         display: block;
-         width: 40px;
-         border-radius: 4px;
-         padding: 2px 13px;
-         gap: 10px;
-         font-size: 24px;
-         text-align: center;
-         line-height: 36px;
-         text-decoration: none;
-         color: #3B3B3B;
-       }
-     
-     .pages .btn:hover{
-         color: #FFFFFF;
-         background: #1E1E1E;
-       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
    /* 表尾*/
 
@@ -509,9 +460,18 @@ table {
     background: #000000;
     color: #FFFFFF;
     font-size: 20px;
-    font-weight: 700;
-    
+    font-weight: 400; 
 }
+
+.footer-link a:hover{
+    color: #FFFFFF;
+    background: #000000;
+    font-weight: 700;
+  }
+
+
+
+
 
 /* 表尾 RWD*/
 @media (max-width: 768px) {
