@@ -201,7 +201,7 @@ table {
     justify-content: space-between;
     text-align: center;
     gap: 40px;
-    margin-bottom: 80px;
+    
 }
 .item1 h3 , .item2 h3{
     font-size: 16px;
@@ -256,7 +256,10 @@ table {
 
 .main{
    max-width: 1296px;
+   border: 1px solid #e70505;
+
     margin: 0 auto;
+    margin-top: 120px;
     margin-bottom: 120px;
 }
 
@@ -469,11 +472,15 @@ table {
     font-weight: 700;
   }
 
+/* 表尾 992px RWD*/
+@media (max-width: 992px) {
+    .footer-bg{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+      }
 
+}
 
-
-
-/* 表尾 RWD*/
+/* 表尾 768px RWD*/
 @media (max-width: 768px) {
     .footer-bg{
         background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
