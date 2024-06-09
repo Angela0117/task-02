@@ -60,12 +60,14 @@ table {
 
   .container{
     border-bottom: 1px solid #F1F1F1 ;
+    
   }
 
 .header-content{
     max-width: 1296px;
     height: 96px;
     margin: 0 auto;
+    padding: 32px 0px;
     background: pink;
     display: flex;
     justify-content: center;
@@ -76,8 +78,6 @@ table {
 
 .header-content .logo{
     width: 90px;
-    height: 40px;
-    margin: 28px 0; 
     position: absolute;
     left: 0;
 }
@@ -89,20 +89,8 @@ table {
     justify-content: space-between;
     position: relative;
 }
-@media (max-width: 768px) {
-    .menu{
-        /*display: none;*/
-        flex-direction: column;
-        position: absolute;
-        top: 96px;
-        width: 100%;
-        text-align: center;
-    }
-    .header-content{
-        justify-content: end;
-    }
 
-}
+
  /*.menu li::before,.menu li::after{
     position: absolute;
     -webkit-box-reflect: below 16px;
@@ -132,17 +120,13 @@ table {
 
 .menu li{
     padding: 4px 8px;
-    
+   
 }
-
-
-
 .menu .btn{
+    text-decoration: none;
     font-size: 16px;
     color: #000000;
-    text-decoration: none;
     font-weight: 400;
-    
 }
 
 .hamburger-menu{
@@ -152,11 +136,36 @@ table {
 }
 
 @media (max-width: 768px) {
+    .header-content{
+        justify-content: end;
+        height: 56px;
+        padding: 0;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        width: 100%;
+        text-align: center;
+        padding: 40px 0px;
+        gap: 24px;
+    }
+    .menu .btn{
+        font-size: 20px;
+        font-weight: 700;
+    }
     .hamburger-menu{
         display: block;
     }
 
+
 }
+
+
+
+
 
 /* banner*/
 
@@ -305,10 +314,15 @@ table {
 
    /* 表尾*/
 
-   .footer-bg-sm{
-    display: none;
-
-
-
-
+   .footer-bg{
+     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
    }
+
+   .footer-content{
+    max-width: 1296px;
+    margin: 0 auto;
+    height: 424px;
+    border: 1px solid red
+    
+   }
+
