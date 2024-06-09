@@ -68,7 +68,7 @@ table {
     height: 96px;
     margin: 0 auto;
     padding: 32px 0px;
-    background: pink;
+    background: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,7 +178,6 @@ table {
     width: 670px;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid red ;
     margin-bottom: 24px;
     
 }
@@ -225,12 +224,10 @@ table {
    /* 內容*/
 
 .main{
-    max-width: 1296px;
+   max-width: 1296px;
     margin: 0 auto;
     margin-bottom: 120px;
 }
-
-
 
 .list {
     gap: 24px;
@@ -239,20 +236,20 @@ table {
     flex-wrap: wrap;
     row-gap: 80px;
     margin-bottom: 72px;
-    
-    
   }
   
-.card img {
+
+.card {
+    width: 636px;
+  }
+
+  .card img {
+    width: 100%;
     border-radius: 8px;
     display: block;
     border: 1px solid #f1f1f1;
   }
-  
-.card {
-    width: 636px;
-  }
-  
+
 .card-content {
     margin-top: 16px;
     margin-left: 16px;
