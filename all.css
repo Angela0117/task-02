@@ -271,7 +271,7 @@ table {
   
 
 .card {
-    width: 636px;
+    max-width: 636px;
   }
 
   .card img {
@@ -283,13 +283,13 @@ table {
 
 .card-content {
     margin-top: 16px;
-    margin-left: 16px;
+    /*margin-left: 16px;*/
   }
   
 .card-title {
     font-size: 28px;
     font-weight: 700;
-    line-height: 33.6px;
+    line-height: 1.2;
     margin-bottom: 8px;
     color: #3b3b3b;
   }
@@ -305,13 +305,13 @@ table {
   }
   
 .tags li {
+    font-size: 16px;
     border-radius: 16px;
     background: #f1f1f1;
     padding: 4px 12px;
-    line-height: 24px;
     margin-right: 16px;
     color: #3b3b3b;
-    font-weight: bold;
+    font-weight: 400;
   }
   
 .pages{
@@ -342,6 +342,72 @@ table {
 
 /* 內容 RWD*/
   @media (max-width: 768px) {
+    .main{
+         margin: 80px 12px 0px 12px;
+     }
+     
+     .list {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         row-gap: 48px;
+         margin-bottom: 48px;
+       }
+     
+       .card img {
+         width: 100%;
+         border-radius: 4px;
+         display: block;
+         border: 0.55px solid #f1f1f1;
+       }
+     
+     .card-content {
+         margin-top: 16px;
+         padding-left: 16px;
+       }
+       
+     .card-title {
+         font-size: 20px;
+         line-height: 1.2;
+       }
+       
+     .card-text {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 16px;
+       }
+       
+     .pages{
+         max-width: 152px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: space-between;
+         gap: 16px;
+       }
+     
+     .pages .btn{
+         display: block;
+         width: 40px;
+         border-radius: 4px;
+         padding: 2px 13px;
+         gap: 10px;
+         font-size: 24px;
+         text-align: center;
+         line-height: 36px;
+         text-decoration: none;
+         color: #3B3B3B;
+       }
+     
+     .pages .btn:hover{
+         color: #FFFFFF;
+         background: #1E1E1E;
+       }
+
+
+
+
+
 
 
 
