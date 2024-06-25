@@ -48,24 +48,41 @@ table {
 }
 
  /* 表頭 */
- * {
+ *,*::before,*::after{
     box-sizing: border-box;
-    margin: 0 auto;
     
   }
 body{
     font-family: "Noto Sans TC", sans-serif;
     line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
   }
+
+  .pp {
+	max-width: 1296px;
+	margin: 0 auto;	
+}/*新增外圍容器PP，使其他區塊不用再重複設置寬度1296px*/
+
+@media(max-width:1295px){
+  .container{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+
+
 
 .container{
     border-bottom: 1px solid #F1F1F1 ;
   }
 
 .header-content{
-    max-width: 1296px;
+    /*max-width: 1296px;*/
     height: 96px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding: 32px 0px;
     background: #FFFFFF;
     display: flex;
@@ -85,19 +102,53 @@ body{
     gap: 40px;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    /*position: relative;*/
 }
 
 .menu li{
     padding: 4px 8px;
+    position: relative;
+    display: flex;
    
 }
+
+
+
 .menu .btn{
+    
     text-decoration: none;
     font-size: 16px;
     color: #000000;
     font-weight: 400;
 }
+
+/*測試偽元素*/
+.menu li::before,.menu li::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    /*opacity: 0;*/
+    -webkit-box-reflect: below 16px;
+}
+.menu li:hover::before{
+    top: 0;
+    left: 0;
+    border-top: 1px solid #919191;
+    border-left: 1px solid #919191;
+    
+}
+.menu li:hover::after{
+    top: 0;
+    right: 0;
+    border-top: 1px solid  #919191;
+    border-right: 1px solid  #919191;
+}
+
+
+
+
+
 
 .hamburger-menu{
     width: 30px;
@@ -282,19 +333,23 @@ body{
     margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 120px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .list {
     gap: 24px;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     flex-wrap: wrap;
     row-gap: 80px;
     margin-bottom: 72px;
   }
   
 .card {
-    max-width: 636px;
+    /*max-width: 636px;*/
+    width: calc(50% - 12px)
+    
   }
 
 .card img {
@@ -387,8 +442,8 @@ body{
 /* 內容 768px RWD */
   @media (max-width: 768px) {
     .main{
-        margin: 80px 12px 80px 12px;
-     }
+       padding: 80px 12px 80px 12px;
+     }/*改margin為padding*/
      
     .list {
         display: flex;
@@ -438,8 +493,8 @@ body{
    }
 
 .footer-content{
-    max-width: 1296px;
-    margin: 0 auto;
+    /*max-width: 1296px;*/
+    /*margin: 0 auto;*/
     /*padding: 80px 0px;*/
     height: 424px;
     display: flex;
